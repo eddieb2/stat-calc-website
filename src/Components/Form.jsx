@@ -11,6 +11,8 @@ const FormWrapper = styled.form`
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+	border: 1px solid black;
+	padding: 1%;
 `;
 
 const Form = () => {

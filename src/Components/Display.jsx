@@ -5,11 +5,23 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import styled from 'styled-components';
+
+// const DisplayWrapper = styled.div`
+// 	display: flex;
+// 	justify-content: center;
+// `;
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		marginTop: '2%',
 		flexGrow: 1,
-		maxWidth: 752,
+		border: '1px solid black',
+	},
+	gridPosition: {
+		display: 'flex',
+		justifyContent: 'center',
+		border: '1px solid black',
 	},
 	demo: {
 		backgroundColor: theme.palette.background.paper,
@@ -33,7 +45,11 @@ const Display = () => {
 
 	return (
 		<div className={classes.root}>
-			<Grid container spacing={2}>
+			<Grid
+				container
+				spacing={2}
+				className={classes.gridPosition}
+			>
 				<Grid item xs={12} md={6}>
 					<Typography
 						variant='h6'
